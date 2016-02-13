@@ -1,0 +1,174 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background: url(images/shadowweb.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+.container {
+	flex-grow: 1;
+}
+
+
+a {
+	text-decoration: none;
+	color: white;
+}
+/********NAV MENUS*********/
+
+.flex-nav-menu {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.home, 
+.link1,
+.link2 {
+	background: darkgray none repeat scroll 0 0;
+	padding: 10px;
+	margin-top: 5px;
+	color: white;
+
+}
+
+.name-header {
+	font-size: 2em;
+}
+
+.footer {
+	display: flex;
+	font-size: .75em;
+	max-height: 60px;
+	background-color: lightgrey;
+	padding: 5px;
+	color: black;
+}
+
+div.flex-nav-menu .fa {
+    display: none;
+}
+
+
+
+/*Secondary Page*/
+
+.flex-grid-img {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-grid-img img {
+	width: 90%;
+	height: auto;
+}
+
+
+/*Third Page*/
+
+.video-embed {
+	width: 100%;
+	height: auto;
+	margin: .5em 0 .5em 0;
+}
+
+
+
+/*HOME PAGE*/
+
+div.main-img img{
+	width: 100%;
+	height: auto;
+}
+
+/*************MEDIA QUERIES***************/
+
+@media only screen and (min-width: 720px) {
+
+	/*NAV MENU*/
+
+	.flex-nav-menu {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		flex-direction: row;
+		text-align: initial;
+		
+		
+	}
+
+	.name-header {
+		flex-grow: 2;
+		margin-right: auto;
+	}
+
+	.home,
+	.link1,
+	.link2 {
+		flex-grow: 1;
+		margin: 0 3em 0 3em;
+		border-radius: 15px;
+	}
+
+	div.flex-nav-menu .fa {
+    display: inline-block;
+	}
+
+	.flex-container {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		margin: 2em auto;
+		
+	}
+
+	.main,
+	.main-img {
+		
+		margin: 0 1% 0 1%;
+	}
+
+	.container {
+		max-width: 920px;
+		margin: auto;
+	}
+
+/*PAGES*/
+
+.main-vid .video-embed {
+    height: 60vh;
+    width: 100%;
+}
+
+.secondary-vids {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.sub-video {
+	flex-basis: 45%;
+}
+
+.video-embed {
+    height: 250px;
+    
+}
+
+
+
+
+	
+}
